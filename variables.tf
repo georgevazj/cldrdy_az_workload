@@ -58,18 +58,6 @@ variable "akv_key_sequence_number" {
   default     = ""
 }
 
-variable "ip_rules" {
-  type        = list
-  description = "(Optional) The ranges of IPs to can access Key Vault"
-  default = []
-}
-
-variable "virtual_network_subnet_ids" {
-  type        = list
-  description = "(Required) The Azure subnets that can access Key Vault"
-  default = []
-}
-
 variable "delete_retention_days" {
   type        = number
   description = "(Optional) Specifies the number of days that the blob should be retained, between 1 and 365 days. Defaults to 7"
